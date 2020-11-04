@@ -1,0 +1,1144 @@
+! TACO Target Robot: T_ROB1
+MODULE MainModule
+VAR speeddata Work:= [100,20,5000,1000];
+PERS tooldata custom_tool1 := [TRUE, [[-144.18,-154.4,34.77], [0.707107,0.5,-0.5,0]], [0.1,[0.10,0.00,0.00],[1,0,0,0],0,0,0]];
+PROC Main()
+ConfL \Off;
+ConfJ \Off;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[250.97,469.66,112.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[250.97,469.66,12.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[250.97,469.66,112.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[361.74,370.49,112.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[361.74,370.49,12.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[361.74,370.49,112.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[445,248.15,112.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[445,248.15,12.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[445,248.15,112.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[472.28,102.66,112.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[472.28,102.66,12.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[472.28,102.66,112.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[461.21,-45.46,112.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[461.21,-45.46,12.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[461.21,-45.46,112.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[419.4,-187.92,112.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[419.4,-187.92,12.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[419.4,-187.92,112.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[335.76,-310.21,112.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[335.76,-310.21,12.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[335.76,-310.21,112.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[226.44,-410.99,112.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[226.44,-410.99,12.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[226.44,-410.99,112.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[-63,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[154.95,-466.32,112.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[154.95,-466.32,12.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[154.95,-466.32,112.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[-63,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[238.39,479.54,135.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[238.39,479.54,35.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[238.39,479.54,135.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[308.19,422.11,135.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[308.19,422.11,35.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[308.19,422.11,135.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[408.96,313.07,135.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[408.96,313.07,35.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[408.96,313.07,135.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[465.06,176.66,135.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[465.06,176.66,35.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[465.06,176.66,135.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[470.72,28.31,135.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[470.72,28.31,35.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[470.72,28.31,135.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[444.33,-117.89,135.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[444.33,-117.89,35.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[444.33,-117.89,135.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[382.58,-252.45,135.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[382.58,-252.45,35.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[382.58,-252.45,135.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[282.88,-362.53,135.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[282.88,-362.53,35.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[282.88,-362.53,135.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[167.75,-456.72,135.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[167.75,-456.72,35.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[167.75,-456.72,135.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[250.97,469.66,158.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[250.97,469.66,58.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[250.97,469.66,158.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[361.74,370.49,158.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[361.74,370.49,58.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[361.74,370.49,158.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[445,248.15,158.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[445,248.15,58.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[445,248.15,158.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[472.28,102.66,158.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[472.28,102.66,58.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[472.28,102.66,158.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[461.21,-45.46,158.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[461.21,-45.46,58.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[461.21,-45.46,158.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[419.4,-187.92,158.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[419.4,-187.92,58.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[419.4,-187.92,158.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[335.76,-310.21,158.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[335.76,-310.21,58.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[335.76,-310.21,158.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[226.44,-410.99,158.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[226.44,-410.99,58.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[226.44,-410.99,158.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[-63,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[154.95,-466.32,158.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[154.95,-466.32,58.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[154.95,-466.32,158.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[-63,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[238.39,479.54,181.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[238.39,479.54,81.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[238.39,479.54,181.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[308.19,422.11,181.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[308.19,422.11,81.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[308.19,422.11,181.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[408.96,313.07,181.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[408.96,313.07,81.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[408.96,313.07,181.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[465.06,176.66,181.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[465.06,176.66,81.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[465.06,176.66,181.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[470.72,28.31,181.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[470.72,28.31,81.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[470.72,28.31,181.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[444.33,-117.89,181.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[444.33,-117.89,81.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[444.33,-117.89,181.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[382.58,-252.45,181.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[382.58,-252.45,81.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[382.58,-252.45,181.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[282.88,-362.53,181.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[282.88,-362.53,81.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[282.88,-362.53,181.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[167.75,-456.72,181.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[167.75,-456.72,81.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[167.75,-456.72,181.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[250.97,469.66,204.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[250.97,469.66,104.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[250.97,469.66,204.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[361.74,370.49,204.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[361.74,370.49,104.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[361.74,370.49,204.5],[0,0.717813,0.696236,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[445,248.15,204.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[445,248.15,104.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[445,248.15,204.5],[0,0.831572,0.555416,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[472.28,102.66,204.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[472.28,102.66,104.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[472.28,102.66,204.5],[0,0.916888,0.399145,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[461.21,-45.46,204.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[461.21,-45.46,104.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[461.21,-45.46,204.5],[0,0.954434,0.298423,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[419.4,-187.92,204.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[419.4,-187.92,104.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[419.4,-187.92,204.5],[0,0.983706,0.179787,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[335.76,-310.21,204.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[335.76,-310.21,104.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[335.76,-310.21,204.5],[0,0.999786,0.020666,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[226.44,-410.99,204.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[226.44,-410.99,104.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[226.44,-410.99,204.5],[0,0.998685,-0.051273,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[-63,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[154.95,-466.32,204.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[154.95,-466.32,104.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[154.95,-466.32,204.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[-63,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[-63,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[238.39,479.54,227.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[238.39,479.54,127.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[238.39,479.54,227.5],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[308.19,422.11,227.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[308.19,422.11,127.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[308.19,422.11,227.5],[0,0.68545,0.72812,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[408.96,313.07,227.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[408.96,313.07,127.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[408.96,313.07,227.5],[0,0.766282,0.642504,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[465.06,176.66,227.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[465.06,176.66,127.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[465.06,176.66,227.5],[0,0.888876,0.458147,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[470.72,28.31,227.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[470.72,28.31,127.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[470.72,28.31,227.5],[0,0.937742,0.347331,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[444.33,-117.89,227.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[444.33,-117.89,127.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[444.33,-117.89,227.5],[0,0.96801,0.250911,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[382.58,-252.45,227.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[382.58,-252.45,127.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[382.58,-252.45,227.5],[0,0.996098,0.088256,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[282.88,-362.53,227.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[282.88,-362.53,127.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[282.88,-362.53,227.5],[0,0.99974,-0.0228,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[25,540,45.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+IF TestDI(Stavbar_opt) THEN
+WaitDI Stavbar_opt, 0;
+ENDIF
+WaitTime 0.9;
+SetDO Stavbar_Gripper_open, 0;
+SetDO Stavbar_Gripper_close, 1;
+WaitTime 1;
+MoveL [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[167.75,-456.72,227.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveL [[167.75,-456.72,127.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+WaitTime 0.9;
+SetDO Stavbar_Gripper_close, 0;
+SetDO Stavbar_Gripper_open, 1;
+WaitTime 1;
+SetDO Stavbar_Gripper_open, 0;
+MoveL [[167.75,-456.72,227.5],[0,0.997484,-0.070889,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[354.51,-166.41,200.84],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[424.57,176.97,201.64],[0,0.663438,0.748231,0],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+MoveJ [[25,420,145.8],[-0.174713,0.907209,0.375778,0.072368],[0,-1,-1,0],[0,9E9,9E9,9E9,9E9,9E9]],Work,z1,custom_tool1\WObj:=WObj0;
+ENDPROC
+ENDMODULE
